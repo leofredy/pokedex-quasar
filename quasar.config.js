@@ -31,7 +31,7 @@ module.exports = configure(function (/* ctx */) {
     boot: ["i18n", "axios"],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
-    css: ["../assets/css/reset.css"],
+    css: ["../assets/css/reset.css", "../assets/css/animations.css"],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
@@ -45,7 +45,7 @@ module.exports = configure(function (/* ctx */) {
         node: "node16",
       },
 
-      vueRouterMode: "hash", // available values: 'hash', 'history'
+      vueRouterMode: "history", // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,

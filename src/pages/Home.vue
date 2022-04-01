@@ -1,8 +1,11 @@
 <template>
   <div>
-    <BreadCrump />
-
-    Home
+    <div class="row">
+      <div class="column">
+        <BreadCrump />
+        <h1>Home</h1>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,5 +19,13 @@ export default defineComponent({
   components: {
     BreadCrump,
   },
+  created() {
+    document.title = "Pokedex | Home";
+  },
 });
 </script>
+<style scoped>
+h1 {
+  color: white;
+}
+</style>

@@ -1,14 +1,17 @@
 <template>
   <div>
-    <div v-show="store.showFundoEscuro" id="maskToggle"></div>
     <Header />
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import { useCounterStore } from "stores/showcase/index";
+import { useCounterStore } from "./stores/showcase";
 
 import Header from "./components/header/header.vue";
 
@@ -23,18 +26,11 @@ export default defineComponent({
       store,
     };
   },
+  created() {
+    this.store.setLocale(sessionStorage.getItem("lang") || navigator.language);
+  },
 });
 </script>
 
 <style scoped>
-#maskToggle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2px);
-}
 </style>

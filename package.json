@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@intlify/vue-i18n-loader": "^4.1.0",
     "@quasar/app-vite": "^1.0.0-alpha.0",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.10.0",

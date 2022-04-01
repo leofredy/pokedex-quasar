@@ -7,7 +7,7 @@
           <q-breadcrumbs-el
             v-for="(children, index) in childrens"
             :key="index"
-            :label="children.label"
+            :label="$t(children.label)"
             :to="children.path"
           ></q-breadcrumbs-el>
         </q-breadcrumbs>
