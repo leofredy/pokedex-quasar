@@ -1,6 +1,6 @@
 <template>
   <div class="pokedexApp">
-    <!-- <Header /> -->
+    <Header />
     <main>
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
