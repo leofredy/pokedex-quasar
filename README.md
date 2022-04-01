@@ -67,6 +67,6 @@ https://prnt.sc/dKOcmeJe0yqD
 https://prnt.sc/qT4sVuwQsWid
 
  Detalhe Pokémon:
-![image](https://user-images.githubusercontent.com/62650643/161347965-244cc362-a435-41bc-846d-9d3320ff20c1.png)
+https://prnt.sc/iZyFwAxELyJV
 
 ```
