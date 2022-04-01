@@ -1,41 +1,26 @@
-# Quasar App (hellow-quasar)
+# Pokedex
 
 Objetivo do projeto é conhecer a ferramenta e realizar o desafio proposto pela empresa Take 5
 
-## Install the dependencies
+## Instalando dependências.
 ```bash
-yarn
-# or
-npm install
+npm install --save --legacy-peer-deps
+use a flag legacy-peer-deps para evitar conflitos de versão
+
+versões usada no projeto:
+node: v16.14.2
+npm: 8.6.0
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Para iniciar o projeto local
 ```bash
-quasar dev
+npm run dev
+or quasar dev
 ```
 
-
-### Lint the files
+### Infomações do projeto em produção
 ```bash
-yarn lint
-# or
-npm run lint
+Plataforma de hospedagem: Netlify
+Modelo de build: SPA
+Link: https://62475f76df3528102eacb8d9--scintillating-macaron-d2c6f1.netlify.app/
 ```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
