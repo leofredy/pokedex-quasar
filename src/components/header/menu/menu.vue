@@ -10,7 +10,7 @@
       >
         <path
           d="M3.75 22.5H26.25V20H3.75V22.5ZM3.75 16.25H26.25V13.75H3.75V16.25ZM3.75 7.5V10H26.25V7.5H3.75Z"
-          fill="#47C08F"
+          fill="var(--text-primary)"
         />
       </svg>
     </button>
@@ -20,8 +20,15 @@
         <div class="pokedexMenu-topo">
           <router-link to="/" class="pokedexMenu-link">
             <img
+              v-if="store.theme === 'dark'"
               class="pokedexMenu-logo"
               src="/src/assets/img/logo-pokedex.png"
+              alt="Logo PokeDex"
+            />
+            <img
+              v-else
+              class="pokedexMenu-logo"
+              src="/src/assets/img/logo-pokedex-light.png"
               alt="Logo PokeDex"
             />
           </router-link>
@@ -42,15 +49,12 @@
         </div>
         <ul class="pokedexMenu-linksPage">
           <li @click="toggleMenu" class="pokedexMenu-linkPage">
-            <router-link to="/"> Home </router-link>
+            <router-link to="/"> {{ $t("Home") }} </router-link>
           </li>
           <li @click="toggleMenu" class="pokedexMenu-linkPage">
             <router-link to="/todos-os-pokemons">
-              Todos os Pokémons
+              {{ $t("todosOsPokemons") }}
             </router-link>
-          </li>
-          <li @click="toggleMenu" class="pokedexMenu-linkPage">
-            <router-link to="/historico"> Historico de Pesquisa </router-link>
           </li>
         </ul>
       </nav>
@@ -60,12 +64,15 @@
 </template>
 <script>
 import { defineComponent } from "vue";
+import { useCounterStore } from "../../../stores/showcase";
 
 export default defineComponent({
   name: "HeaderMenu",
   data() {
+    const store = useCounterStore();
     return {
       showMenu: false,
+      store,
     };
   },
   computed: {
@@ -114,7 +121,8 @@ export default defineComponent({
 .pokedexMenu-linkPage a {
   padding: 8px 15px;
   font-size: 16px;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 .pokedexMenu-mask {
   position: fixed;

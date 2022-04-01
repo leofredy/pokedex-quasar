@@ -6,6 +6,16 @@
 }
 
 :root {
+  --background-primary: #f4f7ff;
+  --background-secondary: #4fc294;
+  --background-tertiary: #73cfaa;
+  --color-primary: #37ba85;
+  --text-primary: #1f1f1f;
+  --text-secondary: #4b4b4b;
+  --text-tertiary: #808080;
+}
+
+:root body.dark {
   --background-primary: #151f1b;
   --background-secondary: #212a26;
   --background-tertiary: #313a36;

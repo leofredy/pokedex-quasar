@@ -32,10 +32,14 @@
           <SkeletonPokes v-if="loading.listing" />
 
           <Pokemons
-            v-else
+            v-else-if="getPokemons.length"
             class="pokedexListagem-listPokemons"
             :pokemons="getPokemons"
           />
+
+          <p v-else class="pokedexListagem-notPokemons">
+            {{ $t("notPokemon") }}
+          </p>
 
           <Pagination
             class="pokedexListagem-pagination"
@@ -217,6 +221,12 @@ export default defineComponent({
 }
 .pokedexListagem-pagination {
   margin-bottom: 16px;
+}
+.pokedexListagem-notPokemons {
+  margin: 24px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
 }
 </style>
 <style>

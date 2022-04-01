@@ -8,6 +8,7 @@ export const useCounterStore = defineStore("counter", {
     return {
       pokemons: [],
       localeI18,
+      theme: "dark",
     };
   },
   actions: {
@@ -17,6 +18,22 @@ export const useCounterStore = defineStore("counter", {
     setLocale(locale) {
       sessionStorage.setItem("lang", locale);
       this.localeI18 = locale;
+    },
+    toggleTheme() {
+      if (this.theme === "dark") {
+        this.theme = "light";
+      } else {
+        this.theme = "dark";
+      }
+      sessionStorage.setItem("theme", this.theme);
+      document.body.classList.toggle("dark");
+    },
+    initTheme(theme) {
+      sessionStorage.setItem("theme", theme);
+      this.theme = theme;
+      this.theme === "dark"
+        ? document.body.classList.add("dark")
+        : document.body.classList.remove("dark");
     },
   },
 });

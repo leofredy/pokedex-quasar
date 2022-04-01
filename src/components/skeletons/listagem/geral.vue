@@ -5,7 +5,7 @@
         <q-skeleton
           width="200px"
           height="20px"
-          :dark="true"
+          :dark="store.theme === 'dark'"
           type="text"
           class="pokedexSkeletonGeral-text"
         ></q-skeleton>
@@ -14,14 +14,14 @@
           <q-skeleton
             width="120px"
             height="50px"
-            :dark="true"
+            :dark="store.theme === 'dark'"
             type="rect"
           ></q-skeleton>
 
           <q-skeleton
             width="70px"
             height="40px"
-            :dark="true"
+            :dark="store.theme === 'dark'"
             type="rect"
           ></q-skeleton>
         </div>
@@ -30,7 +30,7 @@
           <q-skeleton
             width="100%"
             height="37px"
-            :dark="true"
+            :dark="store.theme === 'dark'"
             type="rect"
             style="max-width: 500px"
           ></q-skeleton>
@@ -43,6 +43,8 @@
 </template>
 <script>
 import { defineComponent } from "vue";
+import { useCounterStore } from "../../../stores/showcase/index";
+
 import SkeletonCards from "../pokemons/cards.vue";
 
 export default defineComponent({
@@ -51,7 +53,10 @@ export default defineComponent({
     SkeletonCards,
   },
   data() {
-    return {};
+    const store = useCounterStore();
+    return {
+      store,
+    };
   },
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="pokedexSkeletonCard">
     <q-skeleton
-      :dark="true"
+      :dark="store.theme === 'dark'"
       width="100px"
       height="110px"
       style="border-radius: 4px"
@@ -11,18 +11,22 @@
     <q-skeleton
       width="50px"
       height="20px"
-      :dark="true"
+      :dark="store.theme === 'dark'"
       type="text"
     ></q-skeleton>
   </div>
 </template>
 <script>
 import { defineComponent } from "vue";
+import { useCounterStore } from "../../../stores/showcase";
 
 export default defineComponent({
   name: "SkeletonCard",
   data() {
-    return {};
+    const store = useCounterStore();
+    return {
+      store,
+    };
   },
 });
 </script>

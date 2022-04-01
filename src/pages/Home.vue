@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <div class="pokedexHome">
     <div class="row">
       <div class="column">
-        <BreadCrump />
-        <h1>Home</h1>
+        <div class="pokedexHome-container">
+          <h1>PokeDex</h1>
+          <p>
+            {{ $t("descricaoHome") }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -12,20 +16,32 @@
 <script>
 import { defineComponent } from "vue";
 
-import BreadCrump from "../components/gerais/breadcrump.vue";
-
 export default defineComponent({
   name: "HomePage",
-  components: {
-    BreadCrump,
-  },
   created() {
     document.title = "Pokedex | Home";
   },
 });
 </script>
 <style scoped>
-h1 {
-  color: white;
+.pokedexHome {
+}
+.pokedexHome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 162.59px);
+}
+.pokedexHome h1 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--color-primary);
+}
+.pokedexHome p {
+  font-size: 14px;
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 400px;
 }
 </style>

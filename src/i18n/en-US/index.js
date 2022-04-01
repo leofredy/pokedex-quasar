@@ -8,6 +8,12 @@ export default {
   filtrar: "Filter",
   Types: "Types",
   Language: "Language",
+  Home: "Home",
+  Height: "Height",
+  Weight: "Weight",
+  notPokemon: "There are no pokemons for this filter.",
+  descricaoHome:
+    "Project developed fulfilling all the specifications for the test of Full Front-end Developer of the company Take 5.",
   normal: "normal",
   fighting: "fighting",
   poison: "poison",

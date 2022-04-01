@@ -5,6 +5,12 @@ export default {
   filtrar: "Filtrar",
   Types: "Tipos",
   Language: "Linguagem",
+  Height: "Altura",
+  Weight: "Peso",
+  notPokemon: "Não possui pokemons para esse filtro.",
+  Home: "Inicio",
+  descricaoHome:
+    "Projeto desenvolvido cumprindo todas as especificações para o teste de Desenvoldedor Front-end Pleno da empresa Take 5.",
   normal: "normal",
   fighting: "lutador",
   poison: "venenoso",
