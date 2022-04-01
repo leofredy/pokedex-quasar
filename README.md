@@ -1,6 +1,6 @@
 # Pokedex
 
-Objetivo do projeto é conhecer a ferramenta e realizar o desafio proposto pela empresa Take 5
+Objetivo do projeto é conhecer a ferramenta e realizar o desafio proposto pela empresa Take 5 para vaga de Desenvolvedor Front-end Pleno
 
 ## Instalando dependências.
 ```bash
@@ -23,4 +23,24 @@ or quasar dev
 Plataforma de hospedagem: Netlify
 Modelo de build: SPA
 Link: https://62475f76df3528102eacb8d9--scintillating-macaron-d2c6f1.netlify.app/
+```
+
+### Páginas que Compõem o projeto
+```bash
+ - Home: breve apresentação do projeto - "/"
+ - Listagem: listagem dos pokémons - "/todos-os-pokemons"
+ - Detalhe: informações de altura e peso do pokémon, a página se basea no id no parametro da url - ex: "/pokemon/1"
+```
+
+### Features no projeto
+```bash
+ - Listagem:
+     - Paginação
+     - Filtro por tipo de pokémon
+     - Filtro por nome do pokémon
+     - Quantidade de pokemons por página
+ 
+ - Theme Dark Mode
+ 
+ - Alternador de linguagem da página pt-BR e en-US
 ```
