@@ -1,6 +1,6 @@
 <template>
   <div class="pokedexApp">
-    <Header />
+    <!-- <Header /> -->
     <main>
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -32,6 +32,7 @@ export default defineComponent({
     };
   },
   created() {
+    console.log(this.$t("descricaoHome"))
     this.store.setLocale(sessionStorage.getItem("lang") || navigator.language);
     this.store.initTheme(sessionStorage.getItem("theme") || "dark");
   },

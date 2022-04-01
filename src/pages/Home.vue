@@ -5,7 +5,7 @@
         <div class="pokedexHome-container">
           <h1>PokeDex</h1>
           <p>
-            {{ $t("descricaoHome") }}
+            {{ this.$t("descricaoHome") }}
           </p>
         </div>
       </div>
