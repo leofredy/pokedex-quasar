@@ -10,6 +10,8 @@ use a flag legacy-peer-deps para evitar conflitos de versão
 versões usada no projeto:
 node: v16.14.2
 npm: 8.6.0
+Quasar vite 2
+Vuejs 3
 ```
 
 ### Para iniciar o projeto local
