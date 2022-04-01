@@ -21,7 +21,7 @@
           <router-link to="/" class="pokedexMenu-link">
             <img
               class="pokedexMenu-logo"
-              src="src/assets/img/logo-pokedex.png"
+              src="/src/assets/img/logo-pokedex.png"
               alt="Logo PokeDex"
             />
           </router-link>

@@ -7,7 +7,7 @@
           <router-link to="/" class="pokedexHeader-link">
             <img
               class="pokedexHeader-logo"
-              src="src/assets/img/logo-pokedex.png"
+              src="/src/assets/img/logo-pokedex.png"
               alt="Logo PokeDex"
             />
           </router-link>
