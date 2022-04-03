@@ -1,8 +1,8 @@
 {
-  "name": "hellow-quasar",
+  "name": "PokedexTake5",
   "version": "0.0.1",
   "description": "Objetivo do projeto é conhecer a ferramenta e realizar o desafio proposto pela empresa Take 5",
-  "productName": "Quasar App",
+  "productName": "Pokedex",
   "author": "Leonardo Freedy <freedyzera@gmail.com>",
   "private": true,
   "scripts": {
@@ -14,7 +14,6 @@
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
     "connect-history-api-fallback": "^1.6.0",
-    "express": "^4.17.3",
     "pinia": "^2.0.12",
     "quasar": "^2.6.0",
     "serve-static": "^1.15.0",
