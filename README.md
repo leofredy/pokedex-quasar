@@ -24,7 +24,7 @@ or quasar dev
 ```bash
 Plataforma de hospedagem: Netlify
 Modelo de build: SPA
-Link: https://62475f76df3528102eacb8d9--scintillating-macaron-d2c6f1.netlify.app/
+Link: https://624926ef6f4f7370b4d88f3d--pokedextake5.netlify.app
 ```
 
 ### Páginas que Compõem o projeto
